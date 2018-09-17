@@ -8,7 +8,7 @@ const prepareStateFormWord = (given_word) => {
         word,
         chars,
         attemp: 1,
-        guess: []
+        guess: [],
         completed: false
     }
 
