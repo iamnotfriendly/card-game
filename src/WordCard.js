@@ -1,0 +1,26 @@
+import React, { Component } from 'react';
+import CharacterCard from './CharacterCard';
+import _ from 'lodash';
+const prepareStateFormWord = (given_word) => {
+    let word = given_word.toUppercase()
+    let chars = _.shuffle(Array.from(word))
+    return{
+        word,
+        chars,
+        attemp: 1,
+        guess: []
+        completed: false
+    }
+
+export default class WordCard extends Component {
+    activationHandler = c => { console.log(`${c} has been activated.`)}
+    render() {
+        return(
+            <div>
+              { Array.from(this.props.value).map((c,i) => <CharacterCard value={c} key={i} activationHandler={this.activationHandler}/>)}  
+            </div>    
+        );
+    }
+}
+
+}
