@@ -39,6 +39,7 @@ export default class WordCard extends Component {
                         activationHandler = {this.activationHandler}/>
                     )
                 }
+                <p>The most dangerous city in the PUBG game.</p>
                 <p>Round : {this.state.attemt}</p>
                 <p>{this.state.completed? "you are the winner!!" : ""}</p>
             </div>
