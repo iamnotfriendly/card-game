@@ -41,7 +41,7 @@ export default class WordCard extends Component {
                 }
                 <p class="sansserif">The most dangerous city in the PUBG game.</p>
                 <p class="sansserif">Round : {this.state.attemt}</p>
-                <p class="sansserif">{this.state.completed? "you are the winner!!" : ""}</p>
+                <p class="sansserif">{this.state.completed? "you are winner!!" : "You are loser!!"}</p>
             </div>
         )
     }
