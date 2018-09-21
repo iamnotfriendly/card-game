@@ -10,8 +10,7 @@ const prepareStateFromWord = (given_word) => {
         chars,
         attemt: 1,
         guess: [],
-        completed: false,
-        lose : false
+        completed: false
     }
 }
 export default class WordCard extends Component {
@@ -44,7 +43,7 @@ export default class WordCard extends Component {
                 <p class="sansserif">Round : {this.state.attemt}</p>
                 <p class="sansserif" className = "winner">{this.state.completed? "you are winner!! refresh to play again." : ""}</p>
                 <div class="image">
-                    {this.state.completed? <img src="http://www.myiconfinder.com/uploads/iconsets/256-256-1ff6e565176b38899fd667fd744a2668-emoticons.png" alt="WINNER" width='300' height='300'/> : ""}
+                    {this.state.completed? <img src="https://formatsplanet.com/wp-content/uploads/2015/03/congratulation.jpg" alt="WINNER" width='600' height='250'/> : ""}
                 </div> 
             </div>
         )
