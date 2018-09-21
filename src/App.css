@@ -42,3 +42,6 @@
   to { transform: rotate(360deg); }
 }
 
+p.sansserif {
+  font-family: Arial, Helvetica, sans-serif;
+}
