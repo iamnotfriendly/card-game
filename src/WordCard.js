@@ -39,9 +39,9 @@ export default class WordCard extends Component {
                         activationHandler = {this.activationHandler}/>
                     )
                 }
-                <p class="sansserif">The most dangerous city in the PUBG game.</p>
-                <p class="sansserif">Round : {this.state.attemt}</p>
-                <p class="sansserif" className = "winner">{this.state.completed? "you are winner!! refresh to play again." : ""}</p>
+                <p class="serif">The most dangerous city in the PUBG game.</p>
+                <p class="serif">Round : {this.state.attemt}</p>
+                <p class="serif" className = "winner">{this.state.completed? "you are winner!! refresh to play again." : ""}</p>
                 <div class="image">
                     {this.state.completed? <img src="https://formatsplanet.com/wp-content/uploads/2015/03/congratulation.jpg" alt="WINNER" width='600' height='250'/> : ""}
                 </div> 
