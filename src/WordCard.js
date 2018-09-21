@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import CharacterCard from './CharacterCard';
 import _ from 'lodash';
+
 const prepareStateFormWord = (given_word) => {
     let word = given_word.toUppercase()
     let chars = _.shuffle(Array.from(word))
@@ -11,12 +12,14 @@ const prepareStateFormWord = (given_word) => {
         guess: [],
         completed: false
     }
+}
 
 export default class WordCard extends Component {
     constructor(props){
         super(props)
         this.state = prepareStateFormWord(this.props.value)
-    } 
+    }
+
     activationHandler = (c) => {
         let guess = [...this.state.guess, c]
         this.setState({guess})
@@ -35,6 +38,4 @@ export default class WordCard extends Component {
             </div>    
         );
     }
-}
-
 }
