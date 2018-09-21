@@ -42,10 +42,10 @@ export default class WordCard extends Component {
                 }
                 <p class="sansserif">The most dangerous city in the PUBG game.</p>
                 <p class="sansserif">Round : {this.state.attemt}</p>
-                <p class="sansserif" className = "winner">{this.state.completed? "you are winner!!" : ""}</p>
+                <p class="sansserif" className = "winner">{this.state.completed? "you are winner!! refresh to play again." : ""}</p>
                 <div class="image">
-                    {this.state.completed? <img src="http://www.myiconfinder.com/uploads/iconsets/256-256-1ff6e565176b38899fd667fd744a2668-emoticons.png" alt="winner" width='300' height='300'/> : ""}
-                </div>   
+                    {this.state.completed? <img src="http://www.myiconfinder.com/uploads/iconsets/256-256-1ff6e565176b38899fd667fd744a2668-emoticons.png" alt="WINNER" width='300' height='300'/> : ""}
+                </div> 
             </div>
         )
     }
