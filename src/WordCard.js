@@ -13,6 +13,10 @@ const prepareStateFormWord = (given_word) => {
     }
 
 export default class WordCard extends Component {
+    constructor(props){
+        super(props)
+        this.state = prepareStateFormWord(this.props.value)
+    } 
     activationHandler = (c) => {
         let guess = [...this.state.guess, c]
         this.setState({guess})
